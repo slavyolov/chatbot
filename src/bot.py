@@ -2,13 +2,15 @@
 
 from chatterbot import ChatBot
 from list_trainer import TrainUsingListTrainer
-from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.trainers import ChatterBotCorpusTrainer, ListTrainer
+from text_cleaner import TextCleaner
+from pathlib import Path
 
 # Create your chatbot
 chatbot = ChatBot(name="Chatspot")
 
 # Specify trainer
-trainer = 'corpus'
+trainer = 'custom_corpus'
 
 if trainer == 'list_trainer':
     # Train your chatbot using built in List Trainer
@@ -20,6 +22,12 @@ elif trainer == 'corpus':
     trainer.train(
         "chatterbot.corpus.english"
     )
+elif trainer == 'custom_corpus':
+    # Training using custom corpus made from chats
+    CORPUS_FILE = str(Path(Path(__file__).parents[1], "src/custom_data/chat.txt"))
+    cleaned_corpus = TextCleaner(chat_file=CORPUS_FILE).clean_corpus()
+    trainer = ListTrainer(chatbot)
+    trainer.train(conversation=cleaned_corpus)
 
 exit_conditions = (":q", "quit", "exit")
 while True:

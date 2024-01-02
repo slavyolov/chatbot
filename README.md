@@ -81,11 +81,21 @@ You already know that your chatbot is not very capable to communicate well with 
   - https://chatterbot.readthedocs.io/en/stable/training.html#training-via-list-data
   - https://chatterbot.readthedocs.io/en/stable/training.html#specifying-corpus-scope
   
-4. Extract WhatsApp data (any other chat works too)
-   - Specifically, you should save the file to the folder that also contains bot.py and rename it chat.txt.
+4. Extract chat data (e.g. WhatsApp or any other provider)
+- Task : Extract chat data (e.g. WhatsApp or any other provider)
+  - Sub tasks :
+     - Export history of a conversation/conversations in txt format
+     - Observe the data
+     - Is there something that can be cleaned? Can we improve our text corpus by doing this?
 
+5. Clean the exported chat data
+    - todo : https://realpython.com/build-a-chatbot-python-chatterbot/#step-1-create-a-chatbot-using-python-chatterbot
+6. Upgrade your chatbot using your custom corpus
+    - todo : https://realpython.com/build-a-chatbot-python-chatterbot/#step-1-create-a-chatbot-using-python-chatterbot
+####
+    maybe 1st part can be covered in 1-4 lectures
 
-
+#### From here start the deeo learning section
 
 
 # Dictionary :
