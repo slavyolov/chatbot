@@ -65,7 +65,29 @@
           - └── db.sqlite3-wal
         - For now you can put them into gitignore :
           - ```**/src/db.*```
-       
+
+3. Train your chatbot 
+
+You already know that your chatbot is not very capable to communicate well with humans. What we have to do now is to train him so that it is better prepared for your interesting questions!
+
+- Task : Train your chatbot using ListTrainer (built-in trainers that come with ChatterBot) and english corpus
+    - Sub tasks : 
+        - upgrade your chatbot with trainer that is using pre-configured questions and answers (list trainer)
+        - upgrade your chatbot with trainer that is using pre-configured corpus data
+        - make your bot configurable (to use no training, list training and corpus training)
+        - What are the limitations you see in the two new approaches (list training and pre-configured corpus data)
+
+- Hints :
+  - https://chatterbot.readthedocs.io/en/stable/training.html#training-via-list-data
+  - https://chatterbot.readthedocs.io/en/stable/training.html#specifying-corpus-scope
+  
+4. Extract WhatsApp data (any other chat works too)
+   - Specifically, you should save the file to the folder that also contains bot.py and rename it chat.txt.
+
+
+
+
+
 # Dictionary :
 - development process : this is process in which multiple developrs/students collaborate in the same repository. Please familiarize with the Git-flow approach for co-development. 
 
