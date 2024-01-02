@@ -46,6 +46,28 @@
      - you should have a file named '.gitignore' in the project directory in which you specify the untracked files by git :
        - https://github.com/github/gitignore/blob/main/Python.gitignore
    - Commit and push to the repository the .gitignore and requirements.txt files 
-     
+   
+2. Create your bot
+    - Task : Create a functioning command-line chatbot. Ask him questions and provide feedback.
+        - Sub tasks : 
+          - Import your chatbot from the installed library ```from chatterbot import ChatBot``` and create an instance of your ChatBot. Specify the name argument of your chatbot (you can be creative here :) )
+          - define exit_conditions for your application (e.g. quit)
+          - create a while loop that will keep looping unless you enter one of the exit conditions
+          - Call the .get_response() method on the ChatBot instance 
+          - Play with the bot (ask him questions). What are the answers? Were they good enough?
+    - Hints : 
+        - When you run bot.py, the ChatterBot may download some NLTK project data and language models. It will print some information about that to your console. Python will not download this data again during subsequent runs.
+        - Please use English to communicate with your bot. Currently, it is quite immature to handle conversation in Cyrillic (you may still try it to see what happens)
+        - You can add emojis for both players (human and bot) for better user experience 
+        - During the first run, our bot (ChatterBot) creates a SQLite database file where it stored all your inputs and connected them with possible responses. There should be three new files that have popped up in your working directory:
+          - ├── db.sqlite3 
+          - ├── db.sqlite3-shm 
+          - └── db.sqlite3-wal
+        - For now you can put them into gitignore :
+          - ```**/src/db.*```
+       
 # Dictionary :
 - development process : this is process in which multiple developrs/students collaborate in the same repository. Please familiarize with the Git-flow approach for co-development. 
+
+# Tutorials :
+- https://realpython.com/build-a-chatbot-python-chatterbot/#step-1-create-a-chatbot-using-python-chatterbot
