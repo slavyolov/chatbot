@@ -10,6 +10,7 @@ import pickle
 import random
 from nltk.stem import WordNetLemmatizer
 import numpy as np
+from chatbots.beta.model import model
 
 
 if __name__ == "__main__":
@@ -66,3 +67,6 @@ if __name__ == "__main__":
     train_x = list(training[:, 0])
     train_y = list(training[:, 1])
     print("Training data created")
+
+    model(train_y=train_y, train_x=train_x)
+    print("Modeling done.")

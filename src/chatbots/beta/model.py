@@ -1,6 +1,7 @@
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import Adam, SGD
+import numpy as np
 
 
 def model(train_y: list, train_x: list):
@@ -33,11 +34,10 @@ def model(train_y: list, train_x: list):
     sgd = SGD(learning_rate=0.01, decay=1e-6, momentum=0.9, nesterov=True)
     adam = Adam(learning_rate=0.01, decay=1e-6)
 
-    model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+    print("NN structure : \n", model.summary())
 
     # fitting and saving the model
     hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-    model.save('chatbot_model.h5', hist)
-
-    print(model.summary())
-    print("model created")
+    model.save('/Users/syol07091/PycharmProjects/chatbot/src/chatbots/beta/output_data/chatbot_model.h5', hist)
+    print("model created and saved")
