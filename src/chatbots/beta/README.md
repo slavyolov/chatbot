@@ -12,3 +12,5 @@
   - Go to '../beta/' directory
   - Run ```chainlit run app.py -w```
       - Results are displayed here : http://localhost:8000
+      - cd src/chatbots/beta; chainlit run app.py -d 
+      - cd src/chatbots/beta; chainlit run app.py -w
