@@ -10,7 +10,7 @@ from pathlib import Path
 chatbot = ChatBot(name="Chatspot")
 
 # Specify trainer
-trainer = 'custom_corpus'
+trainer = 'corpus'
 
 if trainer == 'list_trainer':
     # Train your chatbot using built in List Trainer
@@ -24,7 +24,7 @@ elif trainer == 'corpus':
     )
 elif trainer == 'custom_corpus':
     # Training using custom corpus made from chats
-    CORPUS_FILE = str(Path(Path(__file__).parents[1], "src/custom_data/chat.txt"))
+    CORPUS_FILE = str(Path(Path(__file__).parents[0], "input_data/chat.txt"))
     cleaned_corpus = TextCleaner(chat_file=CORPUS_FILE).clean_corpus()
     trainer = ListTrainer(chatbot)
     trainer.train(conversation=cleaned_corpus)
