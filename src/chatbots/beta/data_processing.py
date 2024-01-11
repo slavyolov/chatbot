@@ -55,7 +55,7 @@ if __name__ == "__main__":
     # Display data
     print(len(classes), "classes", classes)
     print(len(documents), "documents - combination between patterns and intents")
-    print (len(words), "unique lemmatized words (our vocabulary)", words)
+    print(len(words), "unique lemmatized words (our vocabulary)", words)
 
     # Store pickle files (these are needed for subsequent usage)
     # https://docs.python.org/3/library/pickle.html
