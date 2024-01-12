@@ -103,3 +103,7 @@ You already know that your chatbot is not very capable to communicate well with 
 
 # Tutorials :
 - https://realpython.com/build-a-chatbot-python-chatterbot/#step-1-create-a-chatbot-using-python-chatterbot
+
+# Merge strategies :
+- feature branch --> develop ("Squash merge" - Creates a linear history by condensing the source branch commits into a single new commit on the target branch)
+- develop branch --> master ("Rebase and fast-forward" - Creates a linear history by replaying the source branch commits onto the target without a merge commit)
