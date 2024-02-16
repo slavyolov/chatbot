@@ -14,3 +14,7 @@
       - Results are displayed here : http://localhost:8000
       - cd src/chatbots/beta; chainlit run app.py -d 
       - cd src/chatbots/beta; chainlit run app.py -w
+
+# Език на комуникация
+- Ще тренираме бота на английски, но въпросите може да бъдат задавани на български и английски език
+- Ще ползваме google translate API за превод на въпросите на английски и после ще връщаме отговор от модела

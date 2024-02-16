@@ -6,6 +6,7 @@ import pickle
 
 if __name__ == "__main__":
     # Load training data :
+    # str(Path(Path(__file__).parents[0]
     file_name = '/Users/syol07091/PycharmProjects/chatbot/src/chatbots/beta/input_data/intents.json'
     intents = load_json_file(filename=file_name)
 
