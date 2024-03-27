@@ -154,7 +154,7 @@
       "what are the courses offered in your college?",
       "courses?",
       "courses offered",
-      "courses offered in (your university(UNI) name)",
+      "courses offered in (your univrsity(UNI) name)",
       "courses you offer",
       "branches?",
       "courses available at UNI?",
@@ -516,7 +516,7 @@
       "admission process"
    ],
    "responses": [
-      "Application can also be submitted online through the University's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+      "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
    ],
    "context_set": ""
 },
@@ -578,12 +578,12 @@
       "maximum number of seats",
       "maximum students intake",
       "What is college intake",
-      "how many students are taken in each branch",
+      "how many stundent are taken in each branch",
       "seat allotment",
       "seats"
    ],
    "responses": [
-      "For IT, Computer and AI 60 per branch and seat may be differ for different department."
+      "For IT, Computer and extc 60 per branch and seat may be differ for different department."
    ],
    "context_set": ""
 },
@@ -608,7 +608,7 @@
  {
    "tag": "committee",
    "patterns": [
-      "what are the different committee in college",
+      "what are the different committe in college",
       "different committee in college",
       "Are there any committee in college",
       "Give me committee details",
@@ -616,7 +616,7 @@
       "how many committee are there in college"
    ],
    "responses": [
-      "For the various committee in college contact this number: ADD NUMBER"
+      "For the various committe in college contact this number: ADD NUMBER"
    ],
    "context_set": ""
 },
@@ -668,7 +668,7 @@
       "how long will be the vacation"
    ],
    "responses": [
-      "Academic calender is given to you by your class-coordinators after you join your respective classes"
+      "Academic calender is given to you by your class-soordinators after you join your respective classes"
    ],
    "context_set": ""
 },
@@ -689,7 +689,7 @@
    "context_set": ""
 },
  {
-   "tag": "salutation",
+   "tag": "salutaion",
    "patterns": [
       "okk",
       "okie",
